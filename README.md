@@ -1,0 +1,2 @@
+# PracticaJS
+Para ejercitar javascript
