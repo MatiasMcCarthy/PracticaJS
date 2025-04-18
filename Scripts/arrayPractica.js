@@ -1,5 +1,5 @@
 let frutas =['Manzana','Pera','Banana','Naranja','Manzana','Pomelo'];
-//FILTER  DEVUELVE UN ARRAY NUEVO SEGUN CRETERIO DEFINIDO SOBRE EL ARRAY ORIGEN
+/* //FILTER  DEVUELVE UN ARRAY NUEVO SEGUN CRETERIO DEFINIDO SOBRE EL ARRAY ORIGEN
 
 let frutasFiltradas=frutas.filter((param)=>{
     return param==`Manzana`;
@@ -106,3 +106,53 @@ console.log('Son todas manzanas?: '+todasManzanas);
 
 const tienenMas2letras=frutasOriginal.every(fruta=>fruta.length>2);
 console.log('Tienen mas de dos letras?: '+tienenMas2letras);
+
+//PUSH
+console.log(frutas);
+console.log(frutas.push('Sandia'));
+console.log(frutas);
+
+//UNSIHFT  AGREGA UNO O MAS ELEMENTOS
+console.log(frutas);
+console.log(frutas.unshift('Sandia'));
+console.log(frutas); */
+
+//SPLICE agrega elimina o reemplaza elemento/s en un array
+//orden de argumentos->(Indici array,cantidad,elementos)
+/* let num=[1,2,3,4,5];
+console.log(num)
+num.splice(2,1)//ELiminar un 1 elemento desde el indice 2
+console.log(num);
+num.splice(2,0,'melon','sandia')//agrega un 2 elementos a aprtir del 2
+
+num.splice(2,2,99,100)//reemplaza dos elementos
+
+//SLICE  Crear una copia del array original segun los argumentos que le mandemos
+
+let resultadoSlice=frutas.slice(2,5)//crea una copia del array desde el indice 2 al 5 no incluye el final */
+
+//FOREACH recorre el array y realiza una funcion sobre los elementos del array
+
+/* frutas.forEach((fruta)=>{
+  console.log('forEach ',fruta)
+})
+
+frutas.forEach((fruta,indice,array)=>{
+console.log(`Fruta:${fruta},indice: ${indice}, Array: ${array}`)
+})
+
+//CONCAT UNIR STRING
+
+let verduras=['lechuga','cebolla','zapallo','remolacha']
+
+console.log(frutas.concat(verduras)) */
+
+//SORT ORDENAR
+
+const arrayNumber=['1','3','7','5','9']
+
+console.log(arrayNumber.sort());
+
+const arrayNumeros2=['1','10','12','5','17'];
+console.log(arrayNumeros2.sort((a,b)=>a-b));//Ordena de menor a mayor
+console.log(arrayNumeros2.sort((a,b)=>b-a)); //Ordena de mayor a menor
