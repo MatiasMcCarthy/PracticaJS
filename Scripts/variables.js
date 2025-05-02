@@ -44,4 +44,22 @@ console.log(vendedor);
 //vendedor.edad=56;//AGrego un campo al objeto
 
 
+let jugador={
+    nombre:`Cristiano`,
+    apellido:`Ronaldo`,
+    dorsal:7,
+    equipo:`Real Madrid`,
+    habilidades:[`Cabezazo`,`Remate`,`Velocidad`],
+    obtenerNombreCompleto:function(){
+        return `El nombre completo de este jugador es ${this.nombre} ${this.apellido}`
+    }
+}
+
+let valorObtenerNombreCompleto= jugador.obtenerNombreCompleto();
+console.log(valorObtenerNombreCompleto);
+jugador.equiposAnteriores=[`Manchester`,`Sporting Lisboa`];
+console.log(jugador);
+
+
+
 

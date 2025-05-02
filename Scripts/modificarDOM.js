@@ -1,6 +1,6 @@
 function cambiarDemo(){
   document.getElementById('demo').textContent='Este es el nuevo parrafo'
-
+  
 }
 
 function cambiarColor(){
@@ -25,3 +25,20 @@ for (let index=0; index<arrayLista.length;index++){
 items=items+'<li>' + arrayLista[index]+ '</li>';
 }
 document.getElementById('lista').innerHTML=items;
+
+
+
+const inputElement= document.querySelector('input');
+const selectElement=document.getElementById('nombreSelect');
+
+inputElement.addEventListener("change",ingresarInputAlSelect);
+
+function ingresarInputAlSelect(e){
+    const inputValue=e.target.value;
+    const nuevaOpcion = document.createElement('option');
+    nuevaOpcion.value = inputValue;
+    nuevaOpcion.textContent = inputValue;
+    selectElement.appendChild(nuevaOpcion);
+    inputElement.value = ""; // Limpiar el input después de agregar
+
+}
