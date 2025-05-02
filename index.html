@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Que puedo hacer en JavaScript</h1>
+    <p id="demo">Este texto lo voy a cambiar con JS</p>
+    <p>Este parrafo no cambia</p>
+    <button onclick="cambiarDemo()">Clickeame</button><br><br><br>
+    <label for="select" id="label">Cambio color</label>
+    <select  id="select" onchange="cambiarColor()">
+       <option value="rojo">Rojo</option>
+       <option value="azul">Azul</option>
+       <option value="verde">Verde</option>
+
+    </select>
+
+    <br><br><br><br><br>
+    <ul id="lista"></ul>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombreInput">
+    <select name="nombre" id="nombreSelect">
+        
+    </select>
+   <script  src="Scripts/modificarDOM.js"></script>
+</body>
+</html>
